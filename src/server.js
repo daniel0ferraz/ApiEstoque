@@ -23,7 +23,7 @@ app.post("/produtos", (req, res, next) => {
         precoVenda: req.body.precoVenda,
         categoria: req.body.categoria,
     });
-    res.send(produto) // JSON
+    res.send(produto) //retorna produtos formato JSON
 })
 
 app.listen(porta, () => {
